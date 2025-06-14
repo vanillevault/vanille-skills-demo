@@ -2,39 +2,39 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8" />
-<title>Vanille Skills Demo Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vanille Skills Demo</title>
 <style>
-body { font-family: Arial, sans-serif; background: #121212; color: #e0e0e0; }
-h1 { text-align: center; margin-top: 2rem; }
-.product { margin: 2rem auto; width: 300px; background: #222; padding: 1rem; border-radius: 8px; }
-.product img { width: 100%; border-radius: 8px; }
-.price { font-weight: bold; color: #4caf50; margin: 0.5rem 0; }
-.button { background: #4caf50; color: #fff; border: none; padding: 0.5rem 1rem; cursor: pointer; border-radius: 4px; }
+  body { font-family: Arial, sans-serif; background: #121212; color: #b2fef7; margin: 0; padding: 0; }
+  header { background: #0f0f0f; padding: 2rem; text-align: center; }
+  header img { border-radius: 50%; width: 150px; height: 150px; object-fit: cover; }
+  h1 { margin: 0.5rem 0; font-weight: 900; }
+  main { padding: 2rem; max-width: 800px; margin: auto; }
+  ul.skills { list-style: none; padding: 0; }
+  ul.skills li { background: #1a1a1a; margin: 0.5rem 0; padding: 1rem; border-radius: 8px; box-shadow: 0 0 10px #0ff; font-size: 1.2rem; }
+  footer { text-align: center; padding: 1rem; font-size: 0.8rem; color: #666; }
+  a { color: #b2fef7; text-decoration: none; }
 </style>
 </head>
 <body>
-<h1>Vanille Skills Demo Store</h1>
-
-<div class="product">
-  <img src="img/airpods.jpg" alt="AirPods Pro 2" />
-  <h2>AirPods Pro 2</h2>
-  <p class="price">90€</p>
-  <button onclick="alert('Pago simulado para AirPods Pro 2. Gracias!')">Comprar</button>
-</div>
-
-<div class="product">
-  <img src="img/tomford.jpg" alt="Tom Ford Tobacco Vanille" />
-  <h2>Tom Ford Tobacco Vanille</h2>
-  <p class="price">140€</p>
-  <button onclick="alert('Pago simulado para Tom Ford Tobacco Vanille. Gracias!')">Comprar</button>
-</div>
-
-<div class="product">
-  <img src="img/gshock.jpg" alt="G-Shock Negro" />
-  <h2>G-Shock Negro</h2>
-  <p class="price">70€</p>
-  <button onclick="alert('Pago simulado para G-Shock Negro. Gracias!')">Comprar</button>
-</div>
-
+<header>
+  <img src="https://i.imgur.com/YaTMBro.jpg" alt="Vanille Avatar" />
+  <h1>Vanille - Portfolio de Habilidades</h1>
+  <p>Explorando el arte del código y la automación.</p>
+</header>
+<main>
+  <h2>Habilidades Destacadas</h2>
+  <ul class="skills">
+    <li>Programación: Bash, Python, JavaScript</li>
+    <li>Hacking ético y OSINT</li>
+    <li>Administración de Sistemas Linux</li>
+    <li>Git, GitHub y Control de Versiones</li>
+    <li>E-commerce y Automatización de tareas</li>
+    <li>Diseño UI/UX básico</li>
+  </ul>
+</main>
+<footer>
+  &copy; 2025 Vanille. Repositorio en <a href="https://github.com/vanillevault/vanille-skills-demo" target="_blank">GitHub</a>.
+</footer>
 </body>
 </html>
