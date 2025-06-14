@@ -2,52 +2,39 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Vanille Skills Demo</title>
+<title>Vanille Skills Demo Store</title>
 <style>
-  body {background:#0f111a; color:#a6f0d1; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding:40px 20px;}
-  h2 {text-align:center; font-size:2.5rem; margin-bottom:30px; letter-spacing: 2px;}
-  .skill-item {margin-bottom:30px;}
-  .skill-label {display:flex; justify-content:space-between; align-items:center; margin-bottom:5px; font-weight:700; font-size:1.1rem;}
-  .skill-bar {background:#222; border-radius:10px; overflow:hidden; height:20px;}
-  .skill-progress {height:100%; width:0; transition: width 1.5s ease-in-out;}
-  .bash {background:#4de6a8;}
-  .js {background:#53a6f0;}
-  .git {background:#f1502f;}
-  .osint {background:#a14de6;}
-  .ecom {background:#f0b14d;}
+body { font-family: Arial, sans-serif; background: #121212; color: #e0e0e0; }
+h1 { text-align: center; margin-top: 2rem; }
+.product { margin: 2rem auto; width: 300px; background: #222; padding: 1rem; border-radius: 8px; }
+.product img { width: 100%; border-radius: 8px; }
+.price { font-weight: bold; color: #4caf50; margin: 0.5rem 0; }
+.button { background: #4caf50; color: #fff; border: none; padding: 0.5rem 1rem; cursor: pointer; border-radius: 4px; }
 </style>
 </head>
 <body>
-  <h2>Mis Habilidades</h2>
-  <div class="skill-item">
-    <div class="skill-label"><span>Bash / Shell Scripting</span><span>95%</span></div>
-    <div class="skill-bar"><div class="skill-progress bash" data-percent="95"></div></div>
-  </div>
-  <div class="skill-item">
-    <div class="skill-label"><span>JavaScript / Frontend</span><span>85%</span></div>
-    <div class="skill-bar"><div class="skill-progress js" data-percent="85"></div></div>
-  </div>
-  <div class="skill-item">
-    <div class="skill-label"><span>Git / GitHub</span><span>90%</span></div>
-    <div class="skill-bar"><div class="skill-progress git" data-percent="90"></div></div>
-  </div>
-  <div class="skill-item">
-    <div class="skill-label"><span>OSINT & Hacking Ético</span><span>80%</span></div>
-    <div class="skill-bar"><div class="skill-progress osint" data-percent="80"></div></div>
-  </div>
-  <div class="skill-item">
-    <div class="skill-label"><span>E-commerce & Marketing</span><span>70%</span></div>
-    <div class="skill-bar"><div class="skill-progress ecom" data-percent="70"></div></div>
-  </div>
+<h1>Vanille Skills Demo Store</h1>
 
-<script>
-  window.addEventListener('load', () => {
-    document.querySelectorAll('.skill-progress').forEach(bar => {
-      const pct = bar.getAttribute('data-percent');
-      bar.style.width = pct + '%';
-    });
-  });
-</script>
+<div class="product">
+  <img src="img/airpods.jpg" alt="AirPods Pro 2" />
+  <h2>AirPods Pro 2</h2>
+  <p class="price">90€</p>
+  <button onclick="alert('Pago simulado para AirPods Pro 2. Gracias!')">Comprar</button>
+</div>
+
+<div class="product">
+  <img src="img/tomford.jpg" alt="Tom Ford Tobacco Vanille" />
+  <h2>Tom Ford Tobacco Vanille</h2>
+  <p class="price">140€</p>
+  <button onclick="alert('Pago simulado para Tom Ford Tobacco Vanille. Gracias!')">Comprar</button>
+</div>
+
+<div class="product">
+  <img src="img/gshock.jpg" alt="G-Shock Negro" />
+  <h2>G-Shock Negro</h2>
+  <p class="price">70€</p>
+  <button onclick="alert('Pago simulado para G-Shock Negro. Gracias!')">Comprar</button>
+</div>
+
 </body>
 </html>
